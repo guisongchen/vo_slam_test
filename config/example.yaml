@@ -1,0 +1,59 @@
+%YAML:1.0
+
+# dataset info, change it
+dataset_dir: /home/***/dataset/rgbd_fr1_room/
+
+# file path for pose before optimizing, change it
+# out_path: /home/***/result.txt
+
+# file path for pose after optimizing, change it
+keyframe_path: /home/***/keyframe_trajectory.txt
+camera_path: /home/***/camera_trajectory.txt
+
+# DBoW3 vocabulary input path, change it
+vocabulary_in: /home/***/fr1_room.bin
+
+# DBoW3 vocabulary output path(if you want create new dictionary)
+vocabulary_out: /home/***/my_dictionary.bin
+
+# camera intrinsics of TUM fr1 dataset
+camera_fx: 517.306408
+camera_fy: 516.469215
+camera_cx: 318.643040
+camera_cy: 255.313989
+
+camera_k1: 0.262383
+camera_k2: -0.953104
+camera_p1: -0.005358
+camera_p2: 0.002628
+camera_k3: 1.163314
+
+camera_depthScale: 5000
+
+# camera image info (BGR: 0,  RGB:1)
+camera_width: 640
+camera_height: 480
+camera_RGB: 1
+camera_fps: 30
+
+# baseline times fx
+camera_bf: 40.0
+thDepth: 40.0
+
+# orb parameter
+num_of_features: 1000
+scale_factor: 1.2
+level_pyramid: 8
+edge_threshold: 31
+
+# map drawer parameter
+drawer_width: 1024
+drawer_height: 768
+drawer_fu: 500
+drawer_fv: 500
+drawer_u0: 512
+drawer_v0: 384
+drawer_viewpointX: 0
+drawer_viewpointY: -0.7
+drawer_viewpointZ: -1.8
+
